@@ -27,6 +27,14 @@ From GitHub (no npm publish needed):
 
 Restart DSH once afterwards: the client bundle and HTTP routes are mounted at startup.
 
+Networks where GitHub is unreachable can use the Gitee mirror (same code, same history):
+
+```powershell
+& '<DSH install dir>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add https://gitee.com/zhengkaixing/dsh-conversation-queue.git
+```
+
+> The plugin market only accepts GitHub repositories; the Gitee mirror exists for unreachable networks and is not a listing.
+
 From the plugin market / npm:
 
 ```powershell

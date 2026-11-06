@@ -27,6 +27,14 @@
 
 装完重启一次 DSH（新增的浏览器端 bundle 与 HTTP 路由都是启动时挂载的）。
 
+GitHub 拉不动的网络可以走 Gitee 镜像（同一份代码、同样的历史）：
+
+```powershell
+& '<DSH 安装目录>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add https://gitee.com/zhengkaixing/dsh-conversation-queue.git
+```
+
+> 插件市场只认 GitHub 仓库地址，Gitee 镜像只是给装不上的网络用的，不参与上架。
+
 ### 从插件市场 / npm
 
 ```powershell
