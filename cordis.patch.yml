@@ -1,0 +1,38 @@
+# dsh-conversation-queue —— 对话并发闸门
+#
+# 这一层只插入一条 loader 入口，真正的实现在 index.js 里。
+# 想改参数有两个办法（二选一，推荐第一种）：
+#
+#   1) 直接在下面这份 config 里改数值，保存（没生效就重启一次 DSH）；
+#   2) 在 ~/.dsh/profiles/web/cordis.patch.yml 里用同一个 id 覆盖，
+#      建议把需要的字段写全；没写的字段由 index.js 里的默认值兜底。
+#
+# 例：只把并发数改成 3
+#
+#   - id: conversation-queue
+#     config:
+#       maxConcurrent: 3
+#
+- insert:
+    - id: conversation-queue
+      name: 'dsh-conversation-queue'
+      config:
+        # 总开关：false = 完全不限制（等价于没装本插件）
+        enabled: true
+
+        # 同时允许“正在运行”的对话数量。
+        # 32G 内存建议 2；内存比较紧张就用 1；确认够用再往上加。
+        maxConcurrent: 2
+
+        # 子代理（subagent / 后台任务）是否也参与排队。
+        # 必须保持 false：子代理由父对话派生，若它也排队会出现
+        # “父对话等子代理、子代理等槽位”的死锁。
+        queueSubagents: false
+
+        # 运行状态写到哪里，方便随时查看谁在跑、谁在排队。
+        # 留空 = $DSH_HOME/conversation-queue.json（一般是
+        # C:\Users\<你>\.dsh\conversation-queue.json）
+        statusFile: ''
+
+        # 是否在 DSH 日志里记录每次放行 / 排队。
+        logAdmissions: true

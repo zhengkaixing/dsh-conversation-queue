@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Conversation Queue",
+    "description": "Caps how many conversations run at the same time; the rest wait in a FIFO queue so concurrent turns cannot exhaust memory."
+  }
+}
