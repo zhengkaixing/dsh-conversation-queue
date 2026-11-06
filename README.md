@@ -35,11 +35,11 @@ GitHub 拉不动的网络可以走 Gitee 镜像（同一份代码、同样的历
 
 > 插件市场只认 GitHub 仓库地址，Gitee 镜像只是给装不上的网络用的，不参与上架。
 
-### 从插件市场 / npm
+### 从插件市场安装
 
-```powershell
-& '<DSH 安装目录>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add dsh-conversation-queue
-```
+在 DSH 的插件市场里搜 `dsh-conversation-queue` 点安装即可——市场条目指向这个 GitHub 仓库，效果和上面的 `github:` 命令完全一样。市场列表由 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 维护，每次打开时实时拉取。
+
+> 没有发布 npm 包，别用 `dsh plugin add dsh-conversation-queue`（会去 registry 找同名包）。
 
 ### 本地开发（link）
 

@@ -35,11 +35,11 @@ Networks where GitHub is unreachable can use the Gitee mirror (same code, same h
 
 > The plugin market only accepts GitHub repositories; the Gitee mirror exists for unreachable networks and is not a listing.
 
-From the plugin market / npm:
+From the plugin market:
 
-```powershell
-& '<DSH install dir>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add dsh-conversation-queue
-```
+Open the DSH plugin market, search for `dsh-conversation-queue` and hit install — the listing points at this GitHub repository, so it is equivalent to the `github:` command above. The market index is maintained by [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) and fetched live.
+
+> There is no npm package, so `dsh plugin add dsh-conversation-queue` will fail.
 
 Local development:
 
