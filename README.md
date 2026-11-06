@@ -19,13 +19,19 @@
 
 ## 安装
 
+### 从 GitHub 直接安装（推荐，不需要发 npm）
+
+```powershell
+& '<DSH 安装目录>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add github:zhengkaixing/dsh-conversation-queue
+```
+
+装完重启一次 DSH（新增的浏览器端 bundle 与 HTTP 路由都是启动时挂载的）。
+
 ### 从插件市场 / npm
 
 ```powershell
 & '<DSH 安装目录>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add dsh-conversation-queue
 ```
-
-装完重启一次 DSH（新增的浏览器端 bundle 与 HTTP 路由都是启动时挂载的）。
 
 ### 本地开发（link）
 

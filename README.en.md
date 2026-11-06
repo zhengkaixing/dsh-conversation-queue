@@ -19,11 +19,19 @@ Built for 32 GB machines where two concurrent conversations are enough to get th
 
 ## Install
 
+From GitHub (no npm publish needed):
+
 ```powershell
-& '<DSH install dir>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add dsh-conversation-queue
+& '<DSH install dir>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add github:zhengkaixing/dsh-conversation-queue
 ```
 
 Restart DSH once afterwards: the client bundle and HTTP routes are mounted at startup.
+
+From the plugin market / npm:
+
+```powershell
+& '<DSH install dir>\resources\runtime\cli\bin\dsh.cmd' plugin --profile web add dsh-conversation-queue
+```
 
 Local development:
 

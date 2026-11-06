@@ -37,6 +37,14 @@
     "node": ">=18",
     "dsh": ">=0.2.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengkaixing/dsh-conversation-queue.git"
+  },
+  "homepage": "https://github.com/zhengkaixing/dsh-conversation-queue#readme",
+  "bugs": {
+    "url": "https://github.com/zhengkaixing/dsh-conversation-queue/issues"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
