@@ -39,6 +39,8 @@ GitHub 拉不动的网络可以走 Gitee 镜像（同一份代码、同样的历
 
 在 DSH 的插件市场里搜 `dsh-conversation-queue` 点安装即可——市场条目指向这个 GitHub 仓库，效果和上面的 `github:` 命令完全一样。市场列表由 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 维护，每次打开时实时拉取。
 
+> 上架状态：条目已提交（[PR #12526](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/12526)），自动门禁 `check` 与 `Submission gate` 均已通过，等维护者合并后即可在市场里搜到；合并前请用上面的 GitHub / Gitee 命令安装。
+
 > 没有发布 npm 包，别用 `dsh plugin add dsh-conversation-queue`（会去 registry 找同名包）。
 
 ### 本地开发（link）
