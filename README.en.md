@@ -39,7 +39,7 @@ From the plugin market:
 
 Open the DSH plugin market, search for `dsh-conversation-queue` and hit install — the listing points at this GitHub repository, so it is equivalent to the `github:` command above. The market index is maintained by [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) and fetched live.
 
-> Listing status: the entry is submitted ([PR #12526](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/12526)) and both the `check` and `Submission gate` workflows have passed. It becomes searchable once a maintainer merges the PR; before that, install with the GitHub / Gitee commands above.
+> Listing status: **listed** — [PR #12526](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/12526) was merged on 2026-11-07. The entry lives at [data/plugins/zhengkaixing__dsh-conversation-queue.yml](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/data/plugins/zhengkaixing__dsh-conversation-queue.yml) and is searchable on [awesome-dsh-plugin.com](https://awesome-dsh-plugin.com) and in the DSH plugin market.
 
 > There is no npm package, so `dsh plugin add dsh-conversation-queue` will fail.
 
